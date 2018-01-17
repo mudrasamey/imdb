@@ -3,18 +3,17 @@
     <img src="{{rental.image}}" alt="">
     <small>View Larger</small>
   </a>
-  <h3>{{link-to rental.title "rentals.show" rental}}</h3>
+  <h3>{{link-to rental.title "books.show" rental}}</h3>
   <div class="detail owner">
-    <span>Owner:</span> {{rental.owner}}
+    <span>Director:</span> {{rental.owner}}
   </div>
-  <div class="detail type">
-    <span>Type:</span> {{rental-property-type rental.category}} - {{rental.category}}
-  </div>
-  <div class="detail location">
-    <span>Location:</span> {{rental.city}}
+  <div class="detail">
+    {{rental.description}}
   </div>
   <div class="detail bedrooms">
-    <span>Number of bedrooms:</span> {{rental.bedrooms}}
+    <span>Ratings:</span> {{rental.bedrooms}}
   </div>
-  {{location-map location=rental.city}}
+  <div class="detail bedrooms">
+      <span>Year:</span> {{rental.city}}
+    </div>
 </article>
